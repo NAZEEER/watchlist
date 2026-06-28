@@ -11,7 +11,7 @@ const Watchlist = () => {
   const [positions, setPositions] = useState([]);
 
   useEffect(() => {
-    fetch("https://dummyjson.com/products?limit=100")
+    fetch("https://dummyjson.com/products/category/laptops")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch");
