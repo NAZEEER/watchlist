@@ -11,7 +11,7 @@ const Watchlist = () => {
   const [positions, setPositions] = useState([]);
 
   useEffect(() => {
-    fetch("https://dummyjson.com/products/category/laptops")
+    fetch("https://dummyjson.com/products?limit=100")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch");
@@ -100,6 +100,8 @@ const Watchlist = () => {
 
   const totalHeight =
     positions.length > 0 ? positions[positions.length - 1] + 400 : 0;
+    console.log(products.length);
+    
 
   return (
     <div>
