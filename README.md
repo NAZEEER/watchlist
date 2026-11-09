@@ -2,8 +2,6 @@
 
 A React and Vite product-list application with debounced search and custom list virtualization.
 
-> Portfolio draft: this README is prepared for review. It has not been published to GitHub.
-
 ## Features
 
 - Fetches up to 100 products from the DummyJSON REST API.
@@ -73,4 +71,4 @@ Live demo: `[Add deployed URL if one is available]`
 ## Notes
 
 - The app depends on network access to `https://dummyjson.com`.
-- The repository currently documents dynamic-height virtualization as a future improvement, but the source already measures rendered card heights. This draft updates the documentation to match the implementation.
+- The repository currently documents dynamic-height virtualization as a future improvement, but the source already measures rendered card heights. This README reflects the implementation.
